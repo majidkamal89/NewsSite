@@ -38,6 +38,52 @@ Replace with your connection info.
 
 Every time you Clone , you should run those 6 commands.
 
+Note:---
+Here is some guidelines about running unit test.
+Please follow my provided command.
+
+1- To test all routes use command (included post routes too)
+ - php vendor/phpunit/phpunit/phpunit --filter testAllRoutes
+
+2- To test User Registeration route
+ - php vendor/phpunit/phpunit/phpunit --filter testUserRegisterRoute
+
+3- To test new user creation method
+ - php vendor/phpunit/phpunit/phpunit --filter testCreateNewUser
+
+4- To test user Login method
+ - php vendor/phpunit/phpunit/phpunit --filter testUserLogin
+
+5- To test create User News method
+ - php vendor/phpunit/phpunit/phpunit --filter testCreateUserNews
+
+6- To test All news listing method
+ - php vendor/phpunit/phpunit/phpunit --filter testListAllNews
+
+7- To test Latest 10 news with Author
+ - php vendor/phpunit/phpunit/phpunit --filter testLatestNewsWithAuthor
+
+8- To test all news of a User
+ - php vendor/phpunit/phpunit/phpunit --filter testGetNewsByUserId
+
+9- To test News detail method
+ - php vendor/phpunit/phpunit/phpunit --filter testGetNewsById
+
+10- To test All users and their news
+  - php vendor/phpunit/phpunit/phpunit --filter testAllUserNews
+
+11- To Create News for all users
+  - php vendor/phpunit/phpunit/phpunit --filter testCreateAllUserNews
+
+12- To Delete single user
+  - php vendor/phpunit/phpunit/phpunit --filter testDeleteSingleUser
+
+13- To Delete All Users
+  - php vendor/phpunit/phpunit/phpunit --filter testDeleteAllUser
+
+
+All above test methods would return you values in command prompt window to verify records. Point (1) is about testing all routes of application.
+
 	
 Directory Permission
 =========================
